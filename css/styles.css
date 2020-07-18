@@ -1,0 +1,91 @@
+:root {
+  --accent-color: rgba(241,250,60, 0.8);
+  --overlay-color: rgba(24, 39, 51, 0.65);
+  --primary-color: #aa26da;
+  --menu-speed: 0.5s;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.theme {
+  background-color: #1b1919;
+  color: #f9f9f9;
+}
+.transparent {
+  background-color: transparent;
+}
+
+/* home section */
+.navbar {
+  padding: 2%;
+  padding-bottom: 2.5%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  background-color: black;
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,.2);
+}
+
+/* strikethrough line animation */
+.navbar ul li a {
+  text-decoration: none;
+}
+a {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a:before, a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3%;
+  top: 50%;
+  margin-top: -0.5px;
+  background: var(--accent-color);
+}
+
+a:before {
+  left: -20%;
+}
+a:after {
+  right: -20%;
+  background: var(--accent-color);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+a:hover:before {
+  background: var(--accent-color);
+  width: 140%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  left: -20%;
+}
+
+a:hover:after {
+  background: transparent;
+  width: 120%;
+  transition: 0s;
+}
+
+/* brand name */
+#home .navbar-brand {
+  position: absolute;
+  right: 44%;
+}
+#home .navbar-brand:hover {
+  color: white;
+}
+/* photo colleciton section */
+
+
+/* footer */
+#footer .container {
+  text-align: center;
+  padding: 7% 1% 1% 1%;
+  font-size: 10px;
+}
