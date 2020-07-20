@@ -19,15 +19,19 @@
 }
 
 /* home section */
-.navbar {
+header {
   padding: 2%;
   padding-bottom: 2.5%;
   position: fixed;
   z-index: 1;
   top: 0;
+  left: 0;
+  height: 60px;
   width: 100vw;
-  background-color: black;
   box-shadow: 0 2px 2px 0px rgba(0,0,0,.2);
+}
+#home header {
+  background-color: black;
 }
 
 /* strikethrough line animation */
@@ -71,15 +75,15 @@ a:hover:after {
   width: 120%;
   transition: 0s;
 }
-
-/* brand name */
-#home .navbar-brand {
-  position: absolute;
-  right: 44%;
-}
-#home .navbar-brand:hover {
+header a {
   color: white;
 }
+header a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
 /* photo colleciton section */
 
 

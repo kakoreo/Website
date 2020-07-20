@@ -74,7 +74,7 @@
 /* show menu */
 .menu-wrap .menu {
   position: fixed;
-  top: 0;
+  top: 60px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -82,13 +82,17 @@
   overflow: hidden;
 }
 .menu-wrap .menu > div {
-  background-color: rgba(195,85,245, 0.6);
-  width: 200%;
-  height: 200vh;
-  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(195,85,245, 0.9);
+  width: 300px;
+  height: 100vh;
   flex: none;
-  transform: scale(0);
+  /* transform: scale(0); */
   transition: all 0.4s ease;
+  transform: translateX(-100%);
+  transition: transform 1s;
 }
 .menu-wrap .menu > div > div {
   text-align: center;
@@ -96,6 +100,8 @@
   max-height: 100vh;
   opacity: 0;
   transition: opacity 0.4s ease;
+  position: relative;
+  bottom: 30px;
 }
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
@@ -111,9 +117,22 @@
 }
 .menu-wrap .toggler:checked ~ .menu > div {
   transform: scale(1);
-  transition: 0.5s;
+  transition: 0.7s;
 }
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
   transition: opacity 0.4s ease;
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  /* visibility: hidden; */
+  opacity: 1;
+  transition: .3s;
+  background-color: pink;
+  z-index: 1;
 }
