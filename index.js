@@ -1,6 +1,7 @@
-$(".toggler").click(function() {
-  $(".menu").slideDown("slow");
-})
-$(".photo").hover(function() {
-  // $(".photo img").css({"opacity":"0.5"});
-})
+$(".toggler").change(function() {
+  $(".main").toggleClass("slideMain");
+});
+$(".unCheck").click(function() {
+  $(".toggler").prop("checked", false);
+  $(".main").removeClass("slideMain");
+});
