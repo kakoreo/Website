@@ -89,7 +89,7 @@
   height: 100%;
   visibility: hidden;
   overflow: hidden;
-  transition: 6s;
+  transition: 0.9s;
 }
 
 .menu-wrap .menu>div {
