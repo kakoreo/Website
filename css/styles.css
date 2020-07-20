@@ -3,6 +3,8 @@
   --overlay-color: rgba(24, 39, 51, 0.65);
   --primary-color: #aa26da;
   --menu-speed: 0.5s;
+  --orange: #fa7d09;
+  --white: #f9f6f7;
 }
 * {
   box-sizing: border-box;
@@ -11,8 +13,9 @@
 }
 
 .theme {
-  background-color: #1b1919;
-  color: #f9f9f9;
+  color: #282828;
+  /* background-color:#f9f9f9; */
+  background-color: var(--white);
 }
 .transparent {
   background-color: transparent;
@@ -28,23 +31,26 @@ header {
   left: 0;
   height: 60px;
   width: 100vw;
-  box-shadow: 0 2px 2px 0px rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,.1);
 }
 #home header {
-  background-color: black;
+  background-color: var(--white);
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* strikethrough line animation */
 .navbar ul li a {
   text-decoration: none;
 }
-a {
+#home a {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-a:before, a:after {
+#home a:before, a:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -54,37 +60,34 @@ a:before, a:after {
   background: var(--accent-color);
 }
 
-a:before {
+#home a:before {
   left: -20%;
 }
-a:after {
+#home a:after {
   right: -20%;
   background: var(--accent-color);
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-a:hover:before {
+#home a:hover:before {
   background: var(--accent-color);
   width: 140%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   left: -20%;
 }
 
-a:hover:after {
+#home a:hover:after {
   background: transparent;
   width: 120%;
   transition: 0s;
 }
 header a {
-  color: white;
+  color: black;
 }
 header a:hover {
-  color: white;
+  color: black;
   text-decoration: none;
 }
-
-
-/* photo colleciton section */
 
 /* footer */
 #footer .container {

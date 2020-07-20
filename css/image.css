@@ -44,8 +44,10 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: rgba(241,250,60, 0.8);
-	color: #aa26da;
+	/* background: rgba(241,250,60, 0.8); */
+  background-color: 	rgba(0,0,0, 0.8);
+	/* color: #aa26da; */
+  color: rgba(241,250,60, 1);
 }
 .cs-style-1 figcaption {
 	height: 100%;

@@ -1,0 +1,18 @@
+.carousel-item img {
+  height: 100vh;
+  object-fit: contain;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+  visibility: hidden;
+}
+#carouselExampleControls i {
+  position: relative;
+  z-index: 1;
+  font-size: 95px;
+  color: rgba(241,250,60, 1);
+}
