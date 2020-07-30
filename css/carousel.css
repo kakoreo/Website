@@ -10,6 +10,16 @@
   background-image: none;
   visibility: hidden;
 }
+.carousel-control-prev {
+  position: fixed;
+  left: 0;
+  top: 65px;
+}
+.carousel-control-next {
+  position: fixed;
+  right: 0;
+  top: 65px;
+}
 #carouselExampleControls i {
   position: relative;
   z-index: 1;

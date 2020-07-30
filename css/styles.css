@@ -29,7 +29,7 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 65px;
   width: 100vw;
   box-shadow: 0 1px 2px 0px rgba(0,0,0,.1);
 }
@@ -88,6 +88,14 @@ header a:hover {
   color: black;
   text-decoration: none;
 }
+
+/* home slider */
+.front-carousel {
+  position: relative;
+  top: 30px;
+  z-index: -1;
+}
+
 
 /* footer */
 #footer .container {
