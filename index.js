@@ -4,5 +4,4 @@ $(".toggler").change(function() {
 $(".unCheck").click(function() {
   $(".toggler").prop("checked", false);
   $(".main").removeClass("slideMain");
-
 });
