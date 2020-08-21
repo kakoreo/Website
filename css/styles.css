@@ -11,6 +11,9 @@
   margin: 0;
   padding: 0;
 }
+h6 {
+  color: white;
+}
 
 .theme {
   color: #282828;
